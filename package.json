@@ -1,15 +1,19 @@
 {
   "name": "lyfe",
   "version": "1.0.0",
-  "description": "Lyfe proxy",
-  "main": "index.js",
+  "description": "Highly advanced Web Proxy with bunch of customization features",
+  "main": "source/main.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node source/test.mjs",
+    "lint": "echo \"LintPKG is not running at this time\" ",
+    "start": "node ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bsn": "github:SeismeticNetwork/dependecy-1",
+    "chalk": "^5.3.0",
     "express": "^4.21.1"
   }
 }
