@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/css/webviewer.css">
+</head>
+<body>
+    <nav>
+        <div class="ButtonHolderViewer">
+            <button class="ActionButtons" onclick="GoFade()">
+                <span class="material-symbols-outlined">
+                    close
+                    </span>Exit</button>
+            <button class="ActionButtons"><span class="material-symbols-outlined">
+                refresh
+                </span>Refresh</button>
+            <button class="ActionButtons"><span class="material-symbols-outlined">
+                fullscreen
+                </span>Fullscreen</button>
+        </div>
+    </nav>
+    <div id="loadingscreen">
+        <div class="spinner"></div>
+       <h1>Loading Content</h1>
+       <p>Your content is being delivered please wait</p>
+       <p class="toolong" style="margin-top: 100px;"> Taking to long?</p>
+       <button class="toolong" id="retrybutton" onclick="window.location.reload()">Retry</button>
+    </div>
+    <script src="assets/javascript/viewer_bundle.js"></script>
+</body>
+</html>

@@ -15,8 +15,8 @@ const bareServer = createBareServer('/api5/');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/public')));
-var woah = new Unblocker({prefix: '/clean/'});
-app.use(woah);
+var unblocker = new Unblocker({prefix: '/webinstance/'});
+app.use(unblocker);
 
 server.on('request', (req, res) => {
     if (bareServer.shouldRoute(req)) {

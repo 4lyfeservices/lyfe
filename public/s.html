@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta charset="utf-8">
+    <meta name="googlebot" content="index, follow, snippet">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+<nav class="TopBar">
+    <img alt="MenuIcon" class="menubutton" src="assets/bru.png" id="menubarico">
+    <img alt="MenuIcon" class="logobutton" src="assets/group1@3x.png">
+    <div class="iconcontainer">
+        <a href="index.html" class="TopBarButtons">
+            <span class="material-symbols-outlined">search</span>
+            <p>Search</p>
+        </a>
+        <a href="a.html" class="TopBarButtons">
+            <span class="material-symbols-outlined">apps</span>
+            <p>Apps</p>
+        </a>
+        <a href="g.html" class="TopBarButtons">
+            <span class="material-symbols-outlined">videogame_asset</span>
+            <p>Games</p>
+        </a>
+        <a href="s.html" class="TopBarButtons">
+            <span class="material-symbols-outlined">settings</span>
+            <p>Settings</p>
+        </a>
+        <a href="c.html" class="TopBarButtons">
+            <span class="material-symbols-outlined">chat</span>
+            <p>Chat</p>
+        </a>
+    </div>
+
+    
+</nav>
+<div class="maincontent" style="flex-wrap: wrap;">
+    <div class="innerdiv">
+        <h1>Proxy Mode</h1>
+<select id="pm" name="proxy_mode" class="SelectionMeter">
+  <option value="uv_epoxy">Ultraviolet (Epoxy)</option>
+  <option value="uv_bare">Ultraviolet (bare)</option>
+  <option value="uv_libcurl">Ultraviolet (libcurl)</option>
+  <option value="scramjet">Scramjet</option>
+  <option value="meteor">Meteor</option>
+  <option value="rh_1">Rammerhead</option>
+  <option value="basic">simpleunblocker</option>
+  <option value="dynamic">Dynamic</option>
+  <option value="dynamic">DIP</option>
+  <option value="dynamic">Stomp</option>
+</select>
+
+<div id="holder1">
+    <p>Force override proxy on apps</p>
+    <label class="switch" id="forceproxyoverride_check">
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<button class="SettingButton" id="savebuttononsettings">Save</button>
+    </div>
+    <div class="innerdiv">
+        <h1>Search Engine</h1>
+        <select id="searchengine" class="SelectionMeter">
+            <option value="https://google.com/search?q=%s">Google</option>
+            <option value="https://bing.com/search?q=%s">Bing</option>
+            <option value="https://search.brave.com/search?q=%s">Brave Search</option>
+            <option value="https://www.ecosia.org/search?method=index&q=%s">ecosia</option>
+            <option value="https://oceanhero.today/web?q=%s">Ocean Hero</option>
+            <option value="https://yandex.com/search/?text=%s">Yandex</option>
+            <option value="https://www.qwant.com/?l=en&q=%s">Qwant</option>
+            <option value="https://search.brave.com/search?q=%s">Brave</option>
+            <option value="https://www.startpage.com/sp/search?q=%s">Startpage</option>
+            <option value="https://www.dogpile.com/serp?q=%s">dogpile</option>
+          </select>
+    </div>
+    <div class="innerdiv">
+        <h1>Themes</h1>
+    </div>
+    <div class="innerdiv">
+        <h1>Exporting/Importing</h1>
+    </div>
+    <div class="innerdiv">
+        <h1>About</h1>
+        <p>Created by rafa at @up2.rxfe on instagram :)</p>
+    </div>
+    <div class="innerdiv"></div>
+</div>
+<div id="particles-js"></div>
+    <script src="assets/javascript/particles.min.js"></script>
+    <script src="assets/javascript/particles.js"></script>
+</body>
+</html>
