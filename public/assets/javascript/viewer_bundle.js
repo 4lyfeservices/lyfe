@@ -32,12 +32,15 @@ setTimeout(() => {
 }, 6000);
 
 
-function installiframe() {
+function loadiniframe(url) {
   const loadingcontainer = document.createElement("div");
+  const iframe = document.getElementById("mrframe")
   loadingcontainer.className = 'loadingscreen';
-
   document.getElementById("loadingscreen").style.display = 'none';
+  iframe.style.display = 'flex';
+ iframe.src = url;
+}
 
-  loadingcontainer.innerHTML = `<iframe class="contentframe" id="mrframe" src="/clean/https://google.com"></iframe>`
-  document.body.appendChild(loadingcontainer)
+function requestreload() {
+ document.getElementById("mrframe").contentWindow.location.reload()
 }
