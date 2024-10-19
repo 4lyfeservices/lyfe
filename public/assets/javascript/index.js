@@ -11,7 +11,7 @@ if (localStorage.getItem("LocalSettings")) {
 } else {
     console.log('%c[lyfe] %cLyfe is not ready || System cannot find a localstorage configuration!!', 'color: gray; font-weight: bold;', 'color: red;');
     const jsonData = {
-       proxy: "uv_epoxy",
+       proxy: "uv_classic",
        search_engine: "https://google.com/search?q=%s",
        ID: 1,
        force_browsermode: false,
@@ -75,7 +75,7 @@ form.addEventListener("submit", async (event) => {
     const targeturl = search(address.value, Engine);
 
     const sessionData = {
-        proxy: StorageParsed.proxy || 'uv_epoxy',
+        proxy: StorageParsed.proxy || 'uv_classic',
         url: targeturl,
         browsermode: StorageParsed.force_browsermode || 'false'
      };

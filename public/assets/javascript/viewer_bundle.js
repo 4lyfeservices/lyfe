@@ -54,6 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const session_data_storage = sessionStorage.getItem("targetdata");
     const main_session_data = JSON.parse(session_data_storage);
 
+    if (main_session_data.proxy = 'uv_classic') {
+        RegisterUV_SW();
+        loadiniframe(return_uvclassic_url(main_session_data.url));
+        console.log('%c[lyfe] %c Succesfully Started iframe!', 'color: gray; font-weight: bold;', 'color: white;');
+    }
 });
 
 function return_uvclassic_url(url) {
@@ -76,3 +81,4 @@ function RegisterUV_SW() {
 
 //todo make the uv register
 //make iframe go
+

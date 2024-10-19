@@ -96,6 +96,10 @@ body {
     border-radius: 10px;
     font-family: "Jost", system-ui;
 }
+
+.innerdiv:hover {
+    border: 1px solid gray;
+}
 .Logo_192 {
     width: 290px;
     font-family: "Jost", system-ui;
