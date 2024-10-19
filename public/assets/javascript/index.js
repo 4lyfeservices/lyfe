@@ -75,9 +75,9 @@ form.addEventListener("submit", async (event) => {
     const targeturl = search(address.value, Engine);
 
     const sessionData = {
-        proxy: "uv_epoxy",
+        proxy: StorageParsed.proxy || 'uv_epoxy',
         url: targeturl,
-        browsermode: StorageParsed.force_browsermode
+        browsermode: StorageParsed.force_browsermode || 'false'
      };
 
      sessionStorage.setItem("targetdata", JSON.stringify(sessionData));

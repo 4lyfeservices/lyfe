@@ -44,3 +44,34 @@ function loadiniframe(url) {
 function requestreload() {
  document.getElementById("mrframe").contentWindow.location.reload()
 }
+
+function requestfullscreen() {
+    document.getElementById("mrframe").requestFullscreen();
+}
+
+//main function
+document.addEventListener('DOMContentLoaded', function() {
+    const session_data_storage = sessionStorage.getItem("targetdata");
+    const main_session_data = JSON.parse(session_data_storage);
+
+});
+
+function return_uvclassic_url(url) {
+    const custom_url = `${__cv$config.prefix}${__cv$config.encodeUrl(url)}`;
+    return custom_url
+  }
+
+  function return_nu_url(url) {
+    const custom_url = `/webinstance/${url}`
+    return custom_url;
+  }
+
+function RegisterUV_SW() {
+    navigator.serviceWorker.register('../serviceworker.js', {
+        scope: __cv$config.prefix,
+      }),
+      console.log('%c[lyfe] %cUltraviolet Registered', 'color: gray; font-weight: bold;', 'color: white;');
+    }
+
+
+//todo make the uv register
