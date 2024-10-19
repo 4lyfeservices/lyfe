@@ -37,18 +37,16 @@
 </nav>
 <div class="maincontent" style="flex-wrap: wrap;">
     <div class="innerdiv">
-        <h1>Proxy Mode</h1>
+        <h1>💼 Proxy Mode</h1>
 <select id="pm" name="proxy_mode" class="SelectionMeter">
+    <option value="uv_classic">Ultraviolet (bare)</option>
   <option value="uv_epoxy">Ultraviolet (Epoxy)</option>
-  <option value="uv_bare">Ultraviolet (bare)</option>
   <option value="uv_libcurl">Ultraviolet (libcurl)</option>
   <option value="scramjet">Scramjet</option>
   <option value="meteor">Meteor</option>
-  <option value="rh_1">Rammerhead</option>
+  <option value="rh">Rammerhead</option>
   <option value="basic">simpleunblocker</option>
   <option value="dynamic">Dynamic</option>
-  <option value="dynamic">DIP</option>
-  <option value="dynamic">Stomp</option>
 </select>
 
 <div id="holder1">
@@ -62,8 +60,8 @@
 <button class="SettingButton" id="savebutton_settings">Save</button>
     </div>
     <div class="innerdiv">
-        <h1>Search Engine</h1>
-        <select id="searchengine" class="SelectionMeter">
+        <h1>🔍 Search Engine</h1>
+        <select id="searchengine" class="SelectionMeter" style="width: 60%;">
             <option value="https://google.com/search?q=%s">Google</option>
             <option value="https://bing.com/search?q=%s">Bing</option>
             <option value="https://search.brave.com/search?q=%s">Brave Search</option>
@@ -75,18 +73,21 @@
             <option value="https://www.startpage.com/sp/search?q=%s">Startpage</option>
             <option value="https://www.dogpile.com/serp?q=%s">dogpile</option>
           </select>
-          <button class="SettingButton" id="savebutton_search">Save</button>
+          <p id="minitext">-----  or  -----</p>
+          <input class="textsettingselement" type="text" id="manualsearch_engine" placeholder="Change your Search Engine" style="width: 60%;">
+          <button class="SettingButton" id="savebutton_search" style="margin-bottom: 10px;">Save</button>
+
     </div>
     <div class="innerdiv">
-        <h1>Themes</h1>
+        <h1>🎨 Themes</h1>
         <button class="SettingButton" id="savebutton_search">Save</button>
     </div>
     <div class="innerdiv">
-        <h1>Exporting/Importing</h1>
+        <h1>🗂️ Exporting/Importing</h1>
     </div>
     <div class="innerdiv">
-        <h1>About</h1>
-        <p>Created by rafa at @up2.rxfe on instagram :)</p>
+        <h1>📚 About</h1>
+        <p>Created by rafa at @rxfe.a on instagram </p>
     </div>
     <div class="innerdiv"></div>
 </div>

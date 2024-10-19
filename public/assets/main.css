@@ -333,3 +333,21 @@ input:checked + .slider:before {
     margin-top: 10px;
     gap: 15px;
 }
+
+.textsettingselement {
+    height: 50px;
+    margin-top: -10px;
+    border: none;
+    color: white;
+    background-color: #3b3b3b;
+    border-radius: 5px;
+}
+
+.textsettingselement:focus {
+    outline: none;
+}
+
+#minitext {
+    font-size: 15px;
+    color: gray;
+}
