@@ -57,7 +57,10 @@
     </label>
 </div>
 
-<button class="SettingButton" id="savebutton_settings">Save</button>
+<button class="SettingButton" id="savebutton_proxy" onclick="changeval('proxy', document.getElementById('pm').value);
+changeval('force_proxyoverride', document.getElementById('forceproxyoverride_check').value);
+
+localStorage.setItem('LocalSettings', JSON.stringify(StorageParsed)); ">me</button>
     </div>
     <div class="innerdiv">
         <h1>🔍 Search Engine</h1>
@@ -92,6 +95,7 @@
     <div class="innerdiv"></div>
 </div>
 <div id="particles-js"></div>
+<script src="assets/javascript/srv_settings.js"></script>
     <script src="assets/javascript/particles.min.js"></script>
     <script src="assets/javascript/particles.js"></script>
 </body>
