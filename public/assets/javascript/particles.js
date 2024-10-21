@@ -59,3 +59,4 @@ particlesJS("particles-js", {
   };
   requestAnimationFrame(update);
   
+  //this makes particles I think
