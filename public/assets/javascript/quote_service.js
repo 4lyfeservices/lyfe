@@ -8,3 +8,5 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => console.error('Error fetching the quotes:', error));
 });
+
+//hehe im so awesome
